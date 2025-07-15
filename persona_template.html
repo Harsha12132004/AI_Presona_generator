@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Persona - {name}</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="persona-image">
+                <div class="avatar-placeholder">
+                    <span class="avatar-initial">{name}</span>
+                </div>
+            </div>
+            <div class="persona-info">
+                <h1 class="persona-name">{name}</h1>
+                <div class="persona-details">
+                    <span class="detail-item">👤 {age} years old</span>
+                    <span class="detail-item">📍 {location}</span>
+                    <span class="detail-item">💼 {occupation}</span>
+                </div>
+                <div class="reddit-info">
+                    <span class="reddit-username">@{username}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bio-section">
+            <h2 class="section-title">Biography</h2>
+            <p class="bio-text">{bio}</p>
+        </div>
+
+        <div class="content-grid">
+            <div class="section personality-section">
+                <h2 class="section-title">🧠 Personality</h2>
+                <div class="traits-container">
+                    {traits}
+                </div>
+                <div class="communication-style">
+                    <h3>Communication Style</h3>
+                    <p>{communication_style}</p>
+                </div>
+            </div>
+
+            <div class="section goals-section">
+                <h2 class="section-title">🎯 Goals</h2>
+                <div class="goal-item">
+                    <h3>Primary Goal</h3>
+                    <p>{primary_goal}</p>
+                </div>
+                <div class="goal-item">
+                    <h3>Secondary Goal</h3>
+                    <p>{secondary_goal}</p>
+                </div>
+                <div class="goal-item">
+                    <h3>Long-term Aspiration</h3>
+                    <p>{long_term_goal}</p>
+                </div>
+            </div>
+
+            <div class="section frustrations-section">
+                <h2 class="section-title">😤 Frustrations</h2>
+                <div class="frustration-item">
+                    <h3>Technology</h3>
+                    <p>{tech_frustration}</p>
+                </div>
+                <div class="frustration-item">
+                    <h3>Community</h3>
+                    <p>{community_frustration}</p>
+                </div>
+                <div class="frustration-item">
+                    <h3>Personal</h3>
+                    <p>{personal_frustration}</p>
+                </div>
+            </div>
+
+            <div class="section motivations-section">
+                <h2 class="section-title">⚡ Motivations</h2>
+                <div class="motivation-item">
+                    <h3>Intrinsic</h3>
+                    <p>{intrinsic_motivation}</p>
+                </div>
+                <div class="motivation-item">
+                    <h3>Extrinsic</h3>
+                    <p>{extrinsic_motivation}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section brands-section">
+            <h2 class="section-title">🏷️ Preferred Brands/Communities</h2>
+            <div class="brands-container">
+                {brands}
+            </div>
+        </div>
+
+        <div class="section quote-section">
+            <h2 class="section-title">💬 Representative Quote</h2>
+            <blockquote class="persona-quote">
+                "{quote}"
+            </blockquote>
+        </div>
+
+        
+
+        <div class="footer">
+            <p>Generated on {timestamp}</p>
+        </div>
+    </div>
+</body>
+</html>
